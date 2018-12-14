@@ -10,7 +10,7 @@ def isLineNum(i) :
 def isId(i) :
 	return len(i) ==1 and i.isalpha() and i.isupper()
 def isConst(i) :
-	return i.isdigit() and int(i) >= 1 and int(i)<=100
+	return i.isdigit() and int(i) >= 0 and int(i)<=100
 def isOp(i) :
 	return i in ['+','-','<','=']
 def isTerm(i) :
